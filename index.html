@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify - Imersão Alura</title>
         <!-- reset do css da página -->
-        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="src/styles/reset.css">
+        <link rel="stylesheet" href="src/styles/vars.css">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
         
         <!-- Folhas de Estilos -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+        <link rel="stylesheet" href="src/styles/main-content.css">
 
 
     </head>
@@ -21,7 +23,7 @@
             <nav class="sidebar__navigation">
                 <div class="logo">
                     <a href="">
-                        <img src="assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                        <img src="src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
                     </a>
                 </div>
                 <ul>
@@ -67,5 +69,31 @@
                 </div>
             </div>
         </div>
+        <main>
+            <div class="main-container">
+                <nav class="header__navigation">
+                    <div class="navigation">
+                        <button class="arrow-left">
+                            <img src="src/assets/icons/small-left.png" alt="Seta esquerda">
+                        </button>
+                        <button class="arrow-right">
+                            <img src="src/assets/icons/small-right.png" alt="Seta Direita">
+                        </button>
+                    </div>
+                    <div class="header__search">
+                        <img src="src/assets/icons/search.png" alt="">
+                        <input type="text"  id="search-input" maxlength="800" placeholder="O que você quer ouvir?"/>
+                    </div>
+                    <div class="header__login">
+                        <button class="subscribe">
+                            Inscreva-se
+                        </button>
+                        <button class="login">
+                            Entrar
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </main>
     </body>
 </html>
